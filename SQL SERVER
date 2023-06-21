@@ -10,3 +10,5 @@ nombrecolumna3 tipodato3,);
 
 drop database DATABURGOS "ELIMINA BASE DE DATOS"
 insert into [Rotonda del Peregrino] (SEMANA,HORA MEDIA ,EDAD MEDIA ,DAÑO SUFRIDO ) values ('1','7','16','26')   "INSERTAR DATOS EN UNA TABLA"
+
+https://gyazo.com/8c75b71a58e4d04ae626fe4fefce2029
