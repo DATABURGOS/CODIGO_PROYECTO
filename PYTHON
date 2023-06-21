@@ -1,0 +1,64 @@
+pip install jupyter  "DENTRO DE ANACONDA PROMPT"
+jupyter notebook     "DENTRO DE ANACONDA PROMPT"
+pip install pyodbc     " DRIVER ODBC(CONECTAR CON SQL SERVER)"    EN ANACONDA PROMPT
+
+"METODO SQL SERVER"
+import pyodbc       "IMPORTAMOS EL DRIVER EN JUPYTER NOTEBOOK"
+server = 'TUPI\ALBERTO'      "RECONOCEMOS EL SERVIDOR"
+
+import pyodbc
+server = 'TUPI\ALBERTO'
+conexion = pyodbc.connect(driver='{SQL server}' , host = server)                  "CONECTAMOS DE MANERA EXITOSA CON NUESTRO SERVIDOR"
+print("conexion exitosa")                                                       "SIRVE PARA ESCRICIR CONEXION EXITOSA Y SABER SI NOS HEMOS CONECTADO"
+ 
+ 
+ 
+ import pyodbc
+server = 'TUPI\ALBERTO'
+conexion = pyodbc.connect(driver='{SQL server}' , host = server)
+basedatos='DATABURGOS'
+print("conexion exitosa")                                                              "INCLUIMOS LA BASE DE DATOS A LA CONEXION"
+
+
+
+
+CONEXION FINAL SQL SERVER--PYTHON       LA TABLA SE LLAMA HOLA ERAN PRUEBAS
+
+import pyodbc
+server = 'TUPI\ALBERTO'
+basedatos='DATABURGOS'
+conexion = pyodbc.connect(driver='{SQL server}' , host = server , database=basedatos)
+
+cursor = conexion.cursor()               "GENERAMOS LA VARIABLE CURSOR"   
+tabla='hola'                            "GENERAMOS LA VARIABLE TABLA"
+consulta_columnas = f'SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = \'{tabla}\''
+cursor.execute(consulta_columnas)
+columnas = [columna[0] for columna in cursor.fetchall()]
+consulta_datos = f'SELECT * FROM {tabla}'                   " SELECCIONA LA TABLA HOlA"               
+cursor.execute(consulta_datos)
+datos = cursor.fetchall()
+encabezados = '\t'.join(columnas)
+print(encabezados)                                     "DIBUJA LOS ENCABEZADOS"
+for fila in hola:
+    fila_formateada = '\t'.join(str(valor) for valor in fila)
+    print(fila_formateada) 
+   
+    
+    
+    METODO EXCEL
+    
+    import pandas as pd                                 "SE IMPORTA LA LIBRERIA"
+CALLELAMERCED = 'CALLE LA MERCED.xlsx'                  "SE CREA LA VARIABLE QUE SERA EL ARCHIVO EXCEL"
+pd.read_excel(CALLELAMERCED)                            "LEE LA VARIABLE CREADA SOBRE EL EXCEL
+
+
+import matplotlib.pyplot as plt                          "SE IMPORTA LA LIBRERIA QUE PERMITE REALIZAR LA TABLA"
+
+#EDAD MEDIA DE ACIDENTES POR SEMANAS                  "NOMBRE ORIENTATIVO"
+eje_x = ["1", "2", "3", "4", "5"]                      "DATOS DE LAS 5 SEMANAS EN EL EJE HORIZONTAL"
+datos = [20, 23, 19, 37, 29]                           "DATOS DEL EJE VERTICAL SOBRE LAS HORAS"
+plt.plot(eje_x, datos)                                 "LEE EJE X Y EJE DATOS"
+plt.show()                                             "LOS MUESTRA"
+EDADMEDIA= 'EDAD MEDIA'                                "VARIABLE PARA PONER DEBAJO DE LAS GRAFICAS UN TEXTO"  
+print(EDADMEDIA)                                       "DIBUJA ESE TEXTO"
+
