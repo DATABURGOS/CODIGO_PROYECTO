@@ -1,0 +1,12 @@
+crea database DATABURGOS "CREAR BASE DE DATOS"
+
+use DATABURGOS "SEÑALA EL USO DE ESTA BASE DE DATOS"
+
+CREATE TABLE CALLE MERCED(
+nombrecolumna1 tipodato1,
+nombrecolumna2 tipodato2,              "CREAMOS UNA TABLA, DEBEMOS INDICAR EL NOMBRE DE LAS COLUMNAS Y EL TIPO DE DATO"
+nombrecolumna3 tipodato3,);
+
+
+drop database DATABURGOS "ELIMINA BASE DE DATOS"
+insert into [Rotonda del Peregrino] (SEMANA,HORA MEDIA ,EDAD MEDIA ,DAÑO SUFRIDO ) values ('1','7','16','26')   "INSERTAR DATOS EN UNA TABLA"
